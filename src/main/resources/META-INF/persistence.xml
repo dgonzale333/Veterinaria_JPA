@@ -6,9 +6,9 @@ http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
              version="2.2">
     <persistence-unit name="PruebaHibernate" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <class>com.julian.entidades.Mascota</class>
-        <class>com.julian.entidades.Nacimiento</class>
-        <class>com.julian.entidades.Persona</class>
+        <class>com.david.entidades.Mascota</class>
+        <class>com.david.entidades.Nacimiento</class>
+        <class>com.david.entidades.Persona</class>
         <properties>
             <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/veterinaria_bd?

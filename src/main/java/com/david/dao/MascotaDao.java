@@ -1,6 +1,6 @@
-package com.julian.dao;
-import com.julian.aplicacion.JPAUtil;
-import com.julian.entidades.Mascota;
+package com.david.dao;
+import com.david.aplicacion.JPAUtil;
+import com.david.entidades.Mascota;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
 

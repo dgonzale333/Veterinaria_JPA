@@ -1,8 +1,8 @@
 package clases;
 
-import com.julian.dao.MascotaDao;
-import com.julian.dao.PersonaDao;
-import com.julian.entidades.*;
+import com.david.dao.MascotaDao;
+import com.david.dao.PersonaDao;
+import com.david.entidades.*;
 
 import javax.swing.*;
 import java.time.LocalDate;

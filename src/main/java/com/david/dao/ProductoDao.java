@@ -1,4 +1,4 @@
-package com.julian.dao;
+package com.david.dao;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -6,10 +6,10 @@ import java.util.List;
 import javax.swing.JOptionPane;
 
 import jakarta.persistence.EntityManager;
-import com.julian.aplicacion.JPAUtil;
-import com.julian.entidades.Persona;
-import com.julian.entidades.PersonasProductos;
-import com.julian.entidades.Producto;
+import com.david.aplicacion.JPAUtil;
+import com.david.entidades.Persona;
+import com.david.entidades.PersonasProductos;
+import com.david.entidades.Producto;
 import jakarta.persistence.Query;
 
 public class ProductoDao {

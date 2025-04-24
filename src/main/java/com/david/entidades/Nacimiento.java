@@ -1,4 +1,4 @@
-package com.julian.entidades;
+package com.david.entidades;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;

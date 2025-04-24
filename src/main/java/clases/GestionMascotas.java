@@ -1,7 +1,7 @@
 package clases;
-import com.julian.dao.MascotaDao;
-import com.julian.entidades.Mascota;
-import com.julian.entidades.Persona;
+import com.david.dao.MascotaDao;
+import com.david.entidades.Mascota;
+import com.david.entidades.Persona;
 
 import javax.swing.*;
 import java.util.List;

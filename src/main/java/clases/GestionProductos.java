@@ -3,9 +3,9 @@ package clases;
 import java.time.LocalDate;
 import java.util.List;
 import javax.swing.JOptionPane;
-import com.julian.dao.ProductoDao;
-import com.julian.entidades.Persona;
-import com.julian.entidades.Producto;
+import com.david.dao.ProductoDao;
+import com.david.entidades.Persona;
+import com.david.entidades.Producto;
 
 public class GestionProductos {
     private ProductoDao productoDao = new ProductoDao();

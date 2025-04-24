@@ -1,4 +1,4 @@
-package com.julian.aplicacion;
+package com.david.aplicacion;
 
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;

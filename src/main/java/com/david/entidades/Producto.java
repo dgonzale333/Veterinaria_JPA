@@ -1,4 +1,4 @@
-package com.julian.entidades;
+package com.david.entidades;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.List;
@@ -22,7 +22,7 @@ public class Producto implements Serializable {
     private Double precioProducto;
 
     @ManyToMany(mappedBy = "listaProductos")
-    private  List<com.julian.entidades.Persona> listaPersonas;
+    private  List<com.david.entidades.Persona> listaPersonas;
 
     //Se crea el constructor vacío
     public Producto(){
@@ -30,7 +30,7 @@ public class Producto implements Serializable {
     }
 
     //Se crea el constructor con parametros
-    public Producto(Long idProducto, String nombreProducto, Double precioProducto, List<com.julian.entidades.Persona> listaPersonas) {
+    public Producto(Long idProducto, String nombreProducto, Double precioProducto, List<com.david.entidades.Persona> listaPersonas) {
         this.idProducto = idProducto;
         this.nombreProducto = nombreProducto;
         this.precioProducto = precioProducto;
@@ -63,11 +63,11 @@ public class Producto implements Serializable {
         this.precioProducto = precioProducto;
     }
 
-    public List<com.julian.entidades.Persona> getListaPersonas() {
+    public List<com.david.entidades.Persona> getListaPersonas() {
         return listaPersonas;
     }
 
-    public void setListaPersonas(List<com.julian.entidades.Persona> listaPersonas) {
+    public void setListaPersonas(List<com.david.entidades.Persona> listaPersonas) {
         this.listaPersonas = listaPersonas;
     }
 

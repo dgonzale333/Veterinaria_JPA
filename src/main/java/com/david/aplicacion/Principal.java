@@ -1,4 +1,4 @@
-package com.julian.aplicacion;
+package com.david.aplicacion;
 import clases.GestionMascotas;
 import clases.GestionPersonas;
 import clases.GestionProductos;

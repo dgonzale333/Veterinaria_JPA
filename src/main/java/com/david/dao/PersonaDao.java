@@ -1,9 +1,9 @@
-package com.julian.dao;
-import com.julian.aplicacion.JPAUtil;
-import com.julian.entidades.Persona;
+package com.david.dao;
+import com.david.aplicacion.JPAUtil;
+import com.david.entidades.Persona;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.Query;
-import com.julian.entidades.Producto;
+import com.david.entidades.Producto;
 
 import javax.swing.*;
 import java.util.ArrayList;

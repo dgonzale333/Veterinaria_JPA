@@ -1,4 +1,4 @@
-package com.julian.entidades;
+package com.david.entidades;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -29,18 +29,18 @@ public class Persona  implements Serializable {
     //Se crea el constructor vacio
     public Persona(){
         //PDF4
-        this.listaMascotas = new ArrayList<com.julian.entidades.Mascota>();
+        this.listaMascotas = new ArrayList<com.david.entidades.Mascota>();
     }
 
     //Se crea el constructor con parametros
-    public Persona(Long idPersona, String nombre, String telefono, String profesion, int tipo, com.julian.entidades.Nacimiento nacimiento) {
+    public Persona(Long idPersona, String nombre, String telefono, String profesion, int tipo, com.david.entidades.Nacimiento nacimiento) {
         this.idPersona = idPersona;
         this.nombre = nombre;
         this.telefono = telefono;
         this.profesion = profesion;
         this.tipo = tipo;
         this.nacimiento = nacimiento;
-        this.listaMascotas= new ArrayList<com.julian.entidades.Mascota>();//PDF4
+        this.listaMascotas= new ArrayList<com.david.entidades.Mascota>();//PDF4
     }
 
     //Se crea los getters y setters
@@ -85,20 +85,20 @@ public class Persona  implements Serializable {
         this.tipo = tipo;
     }
 
-    public com.julian.entidades.Nacimiento getNacimiento() {
+    public com.david.entidades.Nacimiento getNacimiento() {
         return nacimiento;
     }
 
-    public void setNacimiento(com.julian.entidades.Nacimiento nacimiento) {
+    public void setNacimiento(com.david.entidades.Nacimiento nacimiento) {
         this.nacimiento = nacimiento;
     }
 
     //PDF4
-    public List<com.julian.entidades.Mascota> getListaMascotas() {
+    public List<com.david.entidades.Mascota> getListaMascotas() {
         return listaMascotas;
     }
 
-    public void setListaMascotas(List<com.julian.entidades.Mascota> listaMascotas) {
+    public void setListaMascotas(List<com.david.entidades.Mascota> listaMascotas) {
         this.listaMascotas = listaMascotas;
     }
 
@@ -112,11 +112,11 @@ public class Persona  implements Serializable {
 
     @OneToOne(cascade = {CascadeType.ALL})
     @JoinColumn(name = "nacimiento_id", referencedColumnName = "id_nacimiento")
-    private com.julian.entidades.Nacimiento nacimiento;
+    private com.david.entidades.Nacimiento nacimiento;
 
     //PDF4
     @OneToMany(mappedBy = "dueno", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
-    private List<com.julian.entidades.Mascota> listaMascotas;
+    private List<com.david.entidades.Mascota> listaMascotas;
 
     @ManyToMany
     @JoinTable(name = "personas_productos",
