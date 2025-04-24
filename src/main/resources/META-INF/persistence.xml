@@ -16,7 +16,7 @@
             <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
             <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/veterinaria_bd?useSSL=false&amp;serverTimezone=UTC"/>
             <property name="javax.persistence.jdbc.user" value="root"/>
-            <property name="javax.persistence.jdbc.password" value="1091885063"/>
+            <property name="javax.persistence.jdbc.password" value=""/>
 
             <!-- Dialecto de MySQL -->
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
@@ -33,13 +33,5 @@
             <property name="hibernate.connection.characterEncoding" value="utf8"/>
         </properties>
 
-        <!-- Si usas Jakarta EE 9+ y Hibernate 6+, puedes usar estas propiedades en vez de javax:
-        <properties>
-            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
-            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/veterinaria_bd?useSSL=false&amp;serverTimezone=UTC"/>
-            <property name="jakarta.persistence.jdbc.user" value="root"/>
-            <property name="jakarta.persistence.jdbc.password" value="1091885063"/>
-        </properties>
-        -->
     </persistence-unit>
 </persistence>
